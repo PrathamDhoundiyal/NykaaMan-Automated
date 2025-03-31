@@ -1,0 +1,6 @@
+test.class
+uistore\HomePageLocators.class
+pages\HomePageActions.class
+runner\TestRunner.class
+utils\Base.class
+utils\WebDriverHelper.class
