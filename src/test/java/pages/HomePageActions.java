@@ -54,4 +54,8 @@ public class HomePageActions {
         helper.switchToIFrame(homePageLocators.iframe);
         helper.clickOnElemnent(homePageLocators.proceedBtn);
     }
+
+    public void clickBanner() {
+        helper.clickOnElemnent(homePageLocators.banner);
+    }
 }

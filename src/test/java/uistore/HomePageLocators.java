@@ -13,4 +13,6 @@ public class HomePageLocators {
     // public By proceedBtn = By.xpath("//span[text()='Proceed']");
     public By proceedBtn = By.xpath("(//button[@class=\"css-guzomk e8tshxd0\"])[2]");
     public By iframe = By.xpath("//iframe[@src='/mobileCartIframe?ptype=customIframeCart']");
+
+    public By banner = By.id("66c7fe2cf95a07dcdd5ddb72");
 }
