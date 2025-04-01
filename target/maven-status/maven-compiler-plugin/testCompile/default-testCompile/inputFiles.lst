@@ -1,9 +1,11 @@
 C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\pages\HomePageActions.java
-C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\pages\ProductPageActions.java
+C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\pages\KurtaPageActions.java
+C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\pages\PerfumePageActions.java
 C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\runner\TestRunner.java
 C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\test.java
 C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\uistore\HomePageLocators.java
-C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\uistore\ProductPageLocator.java
+C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\uistore\KurtaPageLocator.java
+C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\uistore\PerfumePageLocator.java
 C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\utils\Base.java
 C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\utils\ExcelReader.java
 C:\Users\Pratham\Desktop\Selenium Automation\nykaaman\src\test\java\utils\LoggerHandler.java

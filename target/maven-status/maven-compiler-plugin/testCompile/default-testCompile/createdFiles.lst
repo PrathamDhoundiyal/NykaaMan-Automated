@@ -1,12 +1,14 @@
 utils\ExcelReader.class
-uistore\HomePageLocators.class
 utils\LoggerHandler.class
 utils\Screenshot.class
+uistore\KurtaPageLocator.class
+pages\KurtaPageActions.class
+uistore\HomePageLocators.class
+pages\PerfumePageActions.class
 pages\HomePageActions.class
 utils\Base.class
 utils\Reporter.class
-uistore\ProductPageLocator.class
 test.class
-pages\ProductPageActions.class
 runner\TestRunner.class
 utils\WebDriverHelper.class
+uistore\PerfumePageLocator.class

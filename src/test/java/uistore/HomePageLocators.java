@@ -15,4 +15,6 @@ public class HomePageLocators {
     public By iframe = By.xpath("//iframe[@src='/mobileCartIframe?ptype=customIframeCart']");
 
     public By banner = By.id("66c7fe2cf95a07dcdd5ddb72");
+    public By hooverLifestyle = By.xpath("(//a[normalize-space(text())='Fashion & Lifestyle'])[1]");
+    public By kurta = By.xpath("//a[text()='Kurtas']");
 }

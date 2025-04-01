@@ -1,13 +1,13 @@
 package pages;
 
-import uistore.ProductPageLocator;
+import uistore.PerfumePageLocator;
 import utils.Base;
 import utils.WebDriverHelper;
 
-public class ProductPageActions {
+public class PerfumePageActions {
 
     WebDriverHelper helper = new WebDriverHelper(Base.driver);
-    ProductPageLocator productPageLocator = new ProductPageLocator();
+    PerfumePageLocator productPageLocator = new PerfumePageLocator();
 
     public void choosePerfume() {
         helper.clickOnElemnent(productPageLocator.perfume);

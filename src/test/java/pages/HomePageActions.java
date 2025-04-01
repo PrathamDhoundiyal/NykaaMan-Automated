@@ -58,4 +58,12 @@ public class HomePageActions {
     public void clickBanner() {
         helper.clickOnElemnent(homePageLocators.banner);
     }
+
+    public void hoverLifeStyle() {
+        helper.hoverOverElement(homePageLocators.hooverLifestyle);
+    }
+
+    public void clickKurta() {
+        helper.clickOnElemnent(homePageLocators.kurta);
+    }
 }
