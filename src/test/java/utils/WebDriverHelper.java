@@ -120,6 +120,12 @@ public class WebDriverHelper {
         }
     }
 
+    public void switchToIFrame(By locator) {
+        explicityWait(locator);
+        WebElement iframe = driver.findElement(locator);
+        driver.switchTo().frame(iframe);
+    }
+
 }
 
 /*

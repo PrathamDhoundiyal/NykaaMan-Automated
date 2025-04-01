@@ -1,6 +1,6 @@
-test.class
 uistore\HomePageLocators.class
-pages\HomePageActions.class
-runner\TestRunner.class
+utils\LoggerHandler.class
+utils\Screenshot.class
 utils\Base.class
-utils\WebDriverHelper.class
+utils\Reporter.class
+test.class
