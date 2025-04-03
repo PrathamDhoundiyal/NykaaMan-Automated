@@ -7,6 +7,7 @@ import org.openqa.selenium.io.FileHandler;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class Reporter extends Base {
@@ -14,7 +15,8 @@ public class Reporter extends Base {
 
     public static ExtentReports generateExtentReport(String reportName) {
         if (report == null) {
-            ExtentSparkReporter reporter = new ExtentSparkReporter(reportName);
+            ExtentSparkReporter reporter = new ExtentSparkReporter(
+                    System.getProperty("user.dir") + "/reports/" + reportName + ".html");
 
             report = new ExtentReports();
             report.attachReporter(reporter);
@@ -26,21 +28,26 @@ public class Reporter extends Base {
         return report.createTest(testName);
     }
 
-    public static void attachscreenshotToReport(String filename, ExtentTest test, String message) {
+    public static void attachScreenshotToReport(String filename, ExtentTest test, String message) {
         try {
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            String directoryPath = System.getProperty("user.dir") + "/reports/";
+            String directoryPath = System.getProperty("user.dir") + "/reports/screenshots/";
             File directory = new File(directoryPath);
 
             if (!directory.exists()) {
                 directory.mkdirs();
             }
 
-            String filepath = directoryPath + filename + ".png";
+            // Use absolute path for better reference
+            String filepath = directory.getAbsolutePath() + "/" + filename + ".png";
             File path = new File(filepath);
             FileHandler.copy(screenshot, path);
-            test.addScreenCaptureFromPath(filepath, message);
+
+            // Log screenshot with absolute path
+            test.info(message, MediaEntityBuilder.createScreenCaptureFromPath(path.getAbsolutePath()).build());
+
         } catch (Exception e) {
+            test.fail("Failed to attach screenshot: " + e.getMessage());
             e.printStackTrace();
         }
     }
